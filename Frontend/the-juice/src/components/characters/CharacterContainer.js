@@ -13,11 +13,11 @@ export default class CharacterContainer extends Component {
     componentDidMount() {
         fetch("http://localhost:3000/characters")
         .then(response => response.json())
-        .then(results => console.log(results))
-        // .then(results => this.setState({
-        //     // characters: results.characters
-        //     characters: results.cards
-        // }))
+        // .then(results => console.log(results))
+        .then(results => this.setState({
+            // characters: results.characters
+            characters: results
+        }))
     }
 
     // toggleImage = character => {

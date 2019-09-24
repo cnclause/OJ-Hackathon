@@ -9,7 +9,9 @@ const CharacterCard = ( {character } ) => {
   return(
     // <div className="character-card" onClick={() => toggleImage(character)</div>}>
     <div className="character-card">
-      <p>I am character card!</p>
+      <h2>{character.name}</h2>
+      <h3>{character.connection}</h3>
+      <p>{character.quote}</p>
     </div>
   )
 }

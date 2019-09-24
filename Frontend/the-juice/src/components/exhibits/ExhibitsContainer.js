@@ -8,11 +8,11 @@ export default class ExhibitsContainer extends Component {
     }
     
     componentDidMount() {
-        fetch("https://api.magicthegathering.io/v1/cards/")
+        fetch("http://localhost:3000/exhibits")
         .then(response => response.json())
         .then(results => this.setState({
             // exhibits: results.exhibits
-            characters: results.cards
+            exhibits: results
         }))
 
     }
