@@ -7,7 +7,7 @@ const ExhibitCard = ( {exhibit} ) => {
       <h2>{exhibit.item_name}</h2>
       <h3>{exhibit.category}</h3>
       <p>{exhibit.item_name}</p>
-      <img className="character-image" src={exhibit.photo_one}/>
+      <img className="exhibit-image" src={exhibit.photo_one}/>
     </div>
   )
 }
