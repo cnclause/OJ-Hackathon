@@ -7,7 +7,7 @@ class CreateExhibits < ActiveRecord::Migration[6.0]
       t.string :photo_one
       t.string :photo_two
       t.string :photo_three
-      t.references :trial, null: false, foreign_key: true
+      # t.references :trial, null: false, foreign_key: true
 
       t.timestamps
     end

@@ -16,10 +16,8 @@ ActiveRecord::Schema.define(version: 2019_09_24_172547) do
     t.string "name"
     t.string "connection"
     t.string "quote"
-    t.integer "trial_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["trial_id"], name: "index_characters_on_trial_id"
   end
 
   create_table "exhibits", force: :cascade do |t|
@@ -29,10 +27,8 @@ ActiveRecord::Schema.define(version: 2019_09_24_172547) do
     t.string "photo_one"
     t.string "photo_two"
     t.string "photo_three"
-    t.integer "trial_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["trial_id"], name: "index_exhibits_on_trial_id"
   end
 
   create_table "trials", force: :cascade do |t|
@@ -40,6 +36,4 @@ ActiveRecord::Schema.define(version: 2019_09_24_172547) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "characters", "trials"
-  add_foreign_key "exhibits", "trials"
 end
