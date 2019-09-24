@@ -4,12 +4,13 @@ import CharacterCard from './CharacterCard'
 const CharacterCardList = (props) => {
     const createCharacterCards = () => {
         return props.characters.map(character => (
-            <CharacterCard className="character-card" key={character.id} character={character} toggleImage={toggleImage/> 
+            // <CharacterCard className="character-card" key={character.id} character={character} toggleImage={toggleImage}/> 
+            <CharacterCard className="character-card" key={character.id} character={character}/> 
         ))
     }
 
     return(
-        <div className="character-card-list" />
+        <div className="character-card-list" >
             {createCharacterCards()}
         </div>
     )
