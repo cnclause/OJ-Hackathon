@@ -1,0 +1,57 @@
+body {
+  background: url(https://media2.giphy.com/media/RX8qgl0pBRDP2/source.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar {
+  /* position: absolute; */
+  right: 10px;
+  padding: 20px;
+  font-size: 3vw;
+}
+
+.nav-item {
+  width: 100px;
+  padding: 20px;
+  margin: 0 6px 6px;
+  background: rgba(255, 147, 32, 0.6);
+  text-decoration: none;
+  color: white;
+  border: 1rem;
+  border-block-color: white;
+  border-radius: 1rem;
+}
+
+h1 {
+  color: orange;
+}
+
+header {
+  overflow: hidden;
+  width: 55%;
+  background: rgba(255, 147, 32, 0.8);
+  padding: 20px 10px;
+  color: white;
+  font-size: 4vw;
+  text-align: left;
+  /* margin-top: 300px; */
+  margin: 50px 6px 6px;
+  border-radius: 1rem;
+}
+
+.character-card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character-card {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background: rgba(255, 147, 32, 0.8);
+  font-size: 1vw;
+  border-radius: 1rem;
+}
