@@ -7,3 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first) 
 
 
+# require 'csv'
+
+# csv_text = File.read(Rails.root.join('db', 'seeds', 'exhibit.csv'))
+# puts csv_text
