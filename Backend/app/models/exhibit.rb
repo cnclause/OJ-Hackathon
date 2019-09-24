@@ -1,3 +1,3 @@
 class Exhibit < ApplicationRecord
-    belongs_to :trial
+    # belongs_to :trial
 end
